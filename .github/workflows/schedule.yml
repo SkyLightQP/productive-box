@@ -1,5 +1,6 @@
 name: Update gist
 on:
+  workflow_dispatch:
   repository_dispatch:
     types: [build-event]
   schedule:
@@ -13,5 +14,5 @@ jobs:
         uses: maxam2017/productive-box@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: 9842e074b8ee46aef76fd0d493bae0ed
-          TIMEZONE: Asia/Taipei
+          GIST_ID: c693ebeb976820f59f71a79bcdb3264b
+          TIMEZONE: Asia/Seoul
